@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-color: #4c43d4;
+    font-family: "Poppins";
+}
+body h1{
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
+}
+.balls{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%;
+}
+.balls::before{
+    background-color: #ffc72a;
+    right: -115px;
+    bottom: -115px;
+}
+.balls::before{
+    content: "";
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 40px;
+    position: absolute;
+}
+.balls:after {
+    background-color: #12e177;
+    top: -115px;
+    left: -115px;
+}
+.balls:after, .bg-balls:before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 40px;
+    border-radius: 50%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .grid-game{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(3,80px);
+    grid-template-rows: repeat(3,80px);
+}
+.grid-game .button{
+    background-color: #4c43d4;
+    border: 1px solid white;
+    font-family: "Poppins";
+    font-size: 2.5rem;
+}
+.replayBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.replayBtn .replay{
+    background-color: #4c43d4;
+    color: white;
+    border:2px solid #ffc72a;
+    padding: 10px;
+    border-radius: 8px;
+}
+.currentPlayer{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .balls::before{
+        content: "";
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        padding: 28px;
+        position: absolute;
+    }
+    .balls:after, .bg-balls:before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        padding: 28px;
+        border-radius: 50%;
+    }
+}
+.color{
+    color: #12e177;
+}
