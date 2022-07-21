@@ -83,7 +83,7 @@ body h1{
     color: #12e177;
 }
 
-/* @media screen and (max-width: 500px){
+@media screen and (max-width: 500px){
     .balls::before{
         content: "";
         height: 150px;
@@ -100,4 +100,4 @@ body h1{
         padding: 28px;
         border-radius: 50%;
     }
-} */
+}
