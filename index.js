@@ -12,7 +12,7 @@ head = head.replace("Tac", `<span class="color">Tac</span>`);
 heading.innerHTML = head;
 
 span.innerHTML = currentPlayer;
-span.style.color = "orange";
+span.style.color = "#ffc72a";
 
 player.innerHTML = "Next player is ";
 player.appendChild(span);
