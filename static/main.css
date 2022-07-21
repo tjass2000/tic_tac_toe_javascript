@@ -79,7 +79,11 @@ body h1{
     font-size: 20px;
 }
 
-@media screen and (max-width: 500px){
+.color{
+    color: #12e177;
+}
+
+/* @media screen and (max-width: 500px){
     .balls::before{
         content: "";
         height: 150px;
@@ -96,7 +100,4 @@ body h1{
         padding: 28px;
         border-radius: 50%;
     }
-}
-.color{
-    color: #12e177;
-}
+} */
