@@ -60,7 +60,10 @@ btn.forEach((button)=>{
 replay.addEventListener('click',(e)=>{
     if(isWinner() || isTie()){
         e.target.style = '#4c43d4';
-        player.innerHTML = "Next player is X";
+        span.innerHTML = 'X';
+        span.style.color = '#ffc72a';
+        player.innerHTML = "Next player is ";
+        player.appendChild(span);
         currentPlayer = 'X';
         if(!gameRunning){
             btn.forEach((button)=>{
